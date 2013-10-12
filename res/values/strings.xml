@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GoEuro</string>
+    <string name="missing_feature">This feature is not yet implemented yet.</string>
+    <string name="btn_search_title">Search</string>
+    <string name="starting_point_hint">From: City or Location</string>
+    <string name="destination_hint">To: City or Location</string>
+</resources>

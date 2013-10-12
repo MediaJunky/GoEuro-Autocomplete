@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#68aad6">
+    <RelativeLayout android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#68aad6">
+        <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text=""
+                android:id="@+id/autoCompleteTextViewStartingPoint" android:layout_gravity="center"
+                android:completionThreshold="3"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="30dp" android:layout_alignParentTop="true"
+                android:layout_marginTop="75dp" android:layout_marginRight="30dp" android:textColor="#3f616e"
+                android:background="#ffffff" android:textCursorDrawable="@null" android:hint="@string/starting_point_hint">
+            <requestFocus />
+        </AutoCompleteTextView>
+        <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text=""
+                android:id="@+id/autoCompleteTextViewDestination" android:layout_gravity="center"
+                android:completionThreshold="3"
+                android:textColor="#3f616e"
+                android:background="#ffffff"
+                android:layout_alignLeft="@+id/autoCompleteTextViewStartingPoint"
+                android:layout_below="@+id/autoCompleteTextViewStartingPoint"
+                android:layout_alignRight="@+id/autoCompleteTextViewStartingPoint" android:layout_marginTop="5dp"
+                android:textCursorDrawable="@null" android:hint="@string/destination_hint"/>
+
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text=""
+                android:id="@+id/dateView" android:layout_gravity="center"
+                android:textColor="#3f616e" android:background="#ffffff"
+                android:layout_alignLeft="@+id/autoCompleteTextViewStartingPoint"
+                android:layout_below="@+id/autoCompleteTextViewDestination" android:layout_marginTop="5dp"
+                android:layout_alignRight="@+id/autoCompleteTextViewStartingPoint"
+                android:textCursorDrawable="@null"
+                android:onClick="showDatePickerDialog"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_search_title"
+                android:id="@+id/searchButton" android:layout_gravity="center"
+                android:background="#fe9738" android:textColor="#ffffff"
+                android:layout_alignLeft="@+id/autoCompleteTextViewStartingPoint" android:layout_below="@+id/dateView"
+                android:layout_marginTop="45dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/textView"
+                android:textSize="40dp"
+                android:textColor="#3f616e" android:layout_alignLeft="@+id/autoCompleteTextViewStartingPoint"
+                android:layout_alignParentTop="true" android:layout_marginTop="11dp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@android:drawable/ic_menu_today"
+                android:onClick="showDatePickerDialog"
+                android:background="#efefef" android:layout_alignRight="@+id/autoCompleteTextViewStartingPoint"
+                android:layout_alignTop="@+id/dateView"/>
+    </RelativeLayout>
+</ScrollView>
+

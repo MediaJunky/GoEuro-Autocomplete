@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="GoEuro-Autocompletion">
+    <output-path>$PROJECT_DIR$/out/artifacts/GoEuro_Autocompletion</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="includeSystemProGuardCfgFile" value="true" />
+        <option name="keyAlias" value="brian_nuernberg" />
+        <option name="keyPassword" value="ZnJpZW5kczRtZQ==" />
+        <option name="keyStorePassword" value="ZnJpZW5kczRtZQ==" />
+        <option name="keyStoreUrl" value="file://$PROJECT_DIR$/../../Keytore/imnue" />
+        <option name="proGuardCfgFileUrl" value="file://$PROJECT_DIR$/proguard-project.txt" />
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="GoEuro-Autocompletion.apk">
+      <element id="android-final-package" facet="GoEuro-Autocompletion/android/Android" />
+    </root>
+  </artifact>
+</component>
